@@ -5,48 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <img src="../Practice1/images/banner.jpg" alt="banner" height="240px">
+    <div id="navbar">
+        <img src="../Practice1/images/logo.jpeg" alt="logo" id="logo">
+    </div>
+    <img id="banner" src="../Practice1/images/banner.jpg" alt="banner" height="240px">
     <h1>About Jovian</h1>
-    <p>Welcome to Jovian, your trusted platform for connecting job seekers and employers. We strive to make
-        the
-        hiring process seamless and efficient for everyone. Whether you're looking for your dream job or seeking the
-        perfect
-        candidate to join your team, our portal offers a wide range of features designed to meet your needs</p>
-    <p>We also offer 2 industry-focused bootcamps:
-    <ol>
-        <li>
-            <a href="#">Jovian Full Stack Developer Bootcamp</a>
-        </li>
-        <li>
-            <a href="">Jovian Data Science Bootcamp</a>
-        </li>
-    </ol>
-    </p>
-    <img src="../Practice1/images/team.jpg" alt="Team" height="200px">
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">Jovian is a leading tech company dedicated to revolutionizing the job market by
+                connecting job seekers and employers. Our mission is to create a seamless and efficient platform that
+                makes the hiring process more accessible and rewarding for both parties. Our team of experts has worked
+                tirelessly to develop a comprehensive solution that caters to the diverse needs of job seekers and
+                employers alike.
+            <ol>
+                <li>
+                    <a href="#">Jovian Full Stack Developer Bootcamp</a>
+                </li>
+                <li>
+                    <a href="">Jovian Data Science Bootcamp</a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img src="../Practice1/images/team.jpg" alt="Team" id="team-image">
+        </div>
+    </div>
+
     <h2>Job Opportunities</h2>
-    <div>
-        <h3>Frontend Developers</h3>
-        <span>Bengaluru, India</span>
+    <div id="jobs">
+        <div>
+            <a href="mailto:support.jovian.com?subject=Frontend" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Frontend Developers</h3>
+            <div class="location">Bengaluru, India</div>
+        </div>
+        <div>
+            <a href="mailto:support.jovian.com?subject=Backend" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Backend Developers</h3>
+            <div class="location">Delhi, India</div>
+        </div>
+        <div>
+            <a href="mailto:support.jovian.com?subject=Data" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Data Scientist</h3>
+            <div class="location">Mumbai, India</div>
+        </div>
     </div>
-    <div>
-        <h3>Backend Developers</h3>
-        <span>Delhi, India</span>
-    </div>
-    <div>
-        <h3>Data Scientist</h3>
-        <span>Mumbai, India</span>
-    </div>
-    <div>
-        <ul>
+
+    <div id="footer">
+        <ul id="footer-links">
             <li><a href="https://www.udemy.com/home/my-courses/learning/" target="_blank">Courses</a> </li>
             <li><a href="http://www.udemy.com/home/my-courses/learning/" target="_blank">Programs</a> </li>
             <li> <a href="http://www.youtube.com" target="_blank">Youtube</a></li>
         </ul>
 
-        <span>&copy; 2024, Jovain</span>
+        <span class="copyright">&copy; 2024, Jovain</span>
     </div>
 </body>
 
